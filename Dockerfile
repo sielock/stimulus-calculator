@@ -1,6 +1,6 @@
-FROM python:alpine
-RUN pip install flask
-COPY src src/
-EXPOSE 5000
-
-ENTRYPOINT [ "python", "/src/stimcalc.py" ]
+FROM python:alpine3.11
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+ENTRYPOINT [ "python"]
+CMD [ "src/stimcalc.py" ]
