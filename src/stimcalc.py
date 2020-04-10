@@ -11,8 +11,11 @@ def amount(income, status, kids):
 
     if status == "Single" and 75000 >= income < 99000 :
         amt = 1200 - abs((income - 75000)*0.05) + kids
-    elif status == "Married" and 150000 >= income < 198000 :
-        amt = 2400 - abs((income - 75000)*0.05) + kids
+    elif status == "Married" and income < 150000:
+        amt = 2400 + kids
+    elif status == "Married" and 150000 <= income <198000:
+        amt = 2400 - abs((income - 150000)*0.05) + kids
+
     
     return round(amt, 2)
 
