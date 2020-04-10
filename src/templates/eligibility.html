@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Eligibility Check{% endblock %}
+
+{% block content %}
+<form action="#" method="post">
+    <label for="citizen">Are you a US citizen living and working in the US?</label><br>
+    <input type="radio" id="citizen" name="citizen" value="Yes">
+    <input type="radio" id="citizen" name="citizen" value="No"><br><br>
+
+    <label for="UDep">Are you listed as a dependent on your parents' tax returns?</label><br>
+    <input type="radio" id="UDep" name="UDep" value="Yes">
+    <input type="radio" id="UDep" name="UDep" value="No"><br><br>
+
+    <input type="submit" value="Continue">
+</form>
+{% endblock %}

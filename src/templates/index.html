@@ -1,20 +1,7 @@
 {% extends "base.html" %}
-{% block title %}Stimulus Calculator{% endblock %}
+{% block title %}Welcome!{% endblock %}
 
 {% block content %}
-<form>
-    <label for="input1">Income:</label><br>
-    <input type="text" id="input1" name="input1"><br><br>
-
-    <label for="input2">Dependants</label><br>
-    <input type="text" name="input2" id="input2"><br><br>
-
-     <label for="single">Single/Married</label><br>
-    <input type="radio" id="single" name="status" value="Single">
-    <label for="single">Single</label><br>
-    <input type="radio" id="married" name="status" value="Married">
-    <label for="married">Married</label><br><br>
-
-    <input type="submit" value="Submit">
-</form>
+<h1>Welcome!</h1>
+<h2><a href="/eligibility">See If You Qualify</a></h2>
 {% endblock %}

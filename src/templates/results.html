@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Your Results{% endblock %}
+
+{% block content %}
+<h1>Results</h1>
+
+<div id="results">
+  <p>With an income of: <strong>{{income}}</strong></p>
+  <p>A filing status of: <strong>{{status}}</strong></p>
+  <p><strong>{{children}}</strong> qualifying child(ren) </p><br>
+  <p>You will recieve $<strong>{{amount}}</strong> from the stimulus check. Congratulations!</p>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Stimulus Calculator{% endblock %}
+
+{% block content %}
+<form action="#" method="post">
+    <p>From your most recently filed tax return:</p>
+    <label for="income">Income:</label><br>
+    <input type="text" id="income" name="income" required><br><br>
+    <label for="deps">Children 16 or younger listed as dependents:</label><br>
+    <input type="text" name="deps" id="deps" required><br><br>
+
+    <p>Single/Married</p>
+    <input type="radio" id="status" name="status" value="Single" required>
+    <label for="single">Single</label><br>
+    <input type="radio" id="status" name="status" value="Married" required>
+    <label for="married">Married</label><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
