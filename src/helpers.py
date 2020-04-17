@@ -1,6 +1,7 @@
 #helper functions to determine stimulus check amount
 def amount(income, status, kids):
     income = float(income)
+    kids = float(kids)
     amt = 0
 
     if status == "Single" and income < 75000:
@@ -18,4 +19,5 @@ def amount(income, status, kids):
 #calculates how much additional funding comes from eligible children
 def childBoost(kids):
     children = float(kids)
+    kids = float(kids)
     return 500 * kids
